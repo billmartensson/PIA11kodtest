@@ -10,13 +10,16 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
             Text("Hello, world!")
         }
-        .padding()
+        .onAppear() {
+            //Uppgifter().kod1(mening: "")
+            //Uppgifter().kod2(tal1: "", tal2: "", calctype: "")
+            //Uppgifter().kod3(siffror: [])
+        }
     }
+    
+    
 }
 
 struct ContentView_Previews: PreviewProvider {
